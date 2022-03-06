@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+
+<div class="home-title">
+    <h1> Create your to-do list below</h1>
+</div>
+
+<div class="task-form">
+    <form method="POST">
+
+         {{ form.hidden_tag() }}
+
+        {{ form.task_name(class='my-task') }}  <br>
+        {{ form.task_date(class='task-date') }}<br>
+        {{ form.task_description(class='task-desc') }} <br>
+
+        {{ form.submit(class='task-submit') }}
+
+    </form>
+</div>

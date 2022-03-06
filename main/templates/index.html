@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+
+{% block title %}
+<div class="home-title">
+    <h1> Create your to-do list below 👇</h1>
+</div>
+{% endblock %}
+
+<div class="home-body">
+    <form method="POST" >
+         {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        {{ form.task()  }} <br>
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

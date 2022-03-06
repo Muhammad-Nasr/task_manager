@@ -1,0 +1,32 @@
+{% include 'header.html' %}
+
+
+<div class="personal-title">
+
+
+    <div class="personal-image">
+        <img class="image-title" src="{{ image_file }}">
+        <a title="go to account page" href="{{ url_for ('users.account_page') }}">
+            <h3> {{ current_user.user_name.upper() }} Page </h3>
+        </a>
+
+    </div>
+
+</div>
+
+<hr>
+
+<div class="account-form">
+    <form method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.username.label() }}
+        {{ form.username(class='account-user') }}<br>
+        {{ form.email.label() }}
+        {{ form.email(class='account-email') }} <br>
+
+        {{ form.photo.label() }}
+        {{form.photo(class='account-photo') }}<br>
+
+        {{ form.submit(class='login-submit') }}
+    </form>
+</div>

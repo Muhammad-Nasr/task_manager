@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+
+
+<div class="login-form">
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+
+        {{ form.email.label() }}
+        {{ form.email(class='login-email') }} <br>
+        {{ form.password.label() }}
+        {{ form.password(class='login-pass') }}<br>
+        {{ form.submit(class='login-submit') }}
+
+    </form>
+</div>
+
+<a href="{{ url_for('users.send_email_page') }}">
+    <h4>Forget Password</h4>
+</a>

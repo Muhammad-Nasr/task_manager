@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+
+
+<div class="register-form">
+
+
+<form  method="post">
+    {{ form.hidden_tag() }}
+
+
+     {{form.password.label() }}
+    {{ form.password(class='register-password') }} <br>
+
+     {{form.repeat_password.label() }}
+    {{ form.repeat_password(class='register-item') }} <br>
+    {{ form.submit(class='register-submit') }}
+
+</form>
+</div>

@@ -1,0 +1,15 @@
+{% include 'header.html' %}
+
+
+
+<div class="login-form">
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+
+        {{ form.email.label() }}
+        {{ form.email(class='login-email') }} <br>
+        {{ form.submit(class='register-submit') }}
+
+    </form>
+</div>

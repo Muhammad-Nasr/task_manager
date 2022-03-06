@@ -1,0 +1,568 @@
+/* design header page */
+
+body{
+    margin: 0;
+    color: rgb(50, 19, 19);
+    font-family: 'Fira Sans', sans-serif;
+    background: rgba(249, 245, 240, 0.2);
+}
+
+.head-bar{
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    width: 100%;
+    height: 6em;
+}
+
+.right-bar{
+    font-family: 'Fira Sans', sans-serif;
+    font-size:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-text:center;
+    background: rgb(50, 19, 19);
+    color: white;
+    width:100%;
+    height:50%;
+    padding-top:.3rem;
+    padding-bottom:.3rem;
+
+}
+
+.bar-item{
+    margin-left:1.3rem;
+    margin-right: .4rem;
+}
+
+.bar-item a{
+    text-decoration: none;
+    color:rgb(249, 245, 240)
+}
+
+.bar-item a:hover{
+    color: rgba(249, 245, 240, 0.4);
+}
+
+.bar-item button{
+   background: rgb(50, 19, 19);
+   text-decoration: none;
+   text-align: center;
+    color:rgb(249, 245, 240);
+    border: 2px solid rgb(249, 245, 240);
+    font-family: 'Fira Sans', sans-serif;
+    font-size:1rem;
+    padding: .4rem 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar-item button:hover{
+    opacity: 1;
+    right: 0;
+    padding-right: 25px;
+    color:rgb(50, 19, 19);
+    background:rgb(244, 153, 26);
+}
+.bar-item button:active{
+     box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/* design left-bar */
+
+.left-bar{
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 1.2rem;
+     width: 100%;
+     height: 50%;
+     background: rgb(244, 153, 26);
+     margin:0;
+     text-align: left;
+     justify-content:center;
+      word-spacing: .2rem;
+
+}
+
+.left-bar > h3{
+    margin: 0;
+   padding:0;
+   font-weight: 700;
+   padding-top:.7rem;
+   color: rgb(50, 19, 19);
+
+}
+
+/* -------------------------*/
+
+/* design home page */
+
+.home-title{
+    background: rgb(242, 234, 211);
+    font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    height: 4rem;
+    padding: .7rem 0;
+    word-spacing: .3rem;
+}
+
+.home-title > h1{
+    margin:0;
+    padding-top: 1rem;
+}
+
+.home-body submit{
+    text-align: center;
+}
+.task-form{
+    font-size: 2rem;
+    color: rgb(50, 19, 19);
+    border-style: none;
+    highlight: none;
+    width: 60%;
+    height: 6rem;
+    margin-top: 1rem;
+    word-spacing: .4rem;
+    padding-left: .5rem;
+}
+
+
+
+.task-submit{
+    margin-top: 1rem;
+    width: 10%;
+    height: 3rem;
+    background: rgb(242, 234, 211);
+    color: rgb(50, 19, 19);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    transition: width 0.6s ease-in-out;
+}
+
+.task-submit:hover{
+    width: 20%;
+    color: rgba(50, 19, 19, .6);
+}
+
+/* -----------------------------              */
+
+/*  design home task page */
+
+.home-task{
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 1.2rem;
+     width: 100%;
+     height: 50%;
+     background: rgb(30, 183, 96);
+     border-bottom: 1px solid rgb(23, 139, 73):
+     margin:0;
+     padding: 10px 40px;
+     text-align: left;
+     justify-content:center;
+      word-spacing: .2rem;
+}
+
+.home-task h4{
+    margin: 0;
+   padding:0;
+   font-weight: 400;
+   padding-top:.7rem;
+   color: rgb(255 255 255);
+}
+
+.task-order{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.task-order li{
+    padding: 15px 40px;
+    margin: -1px 0 0;
+    border-bottom: 1px solid #eef0f5;
+    border-top: 1px solid #eef0f5;
+    font-size: 22px;
+    zoom: 1;
+}
+
+.home-check{
+
+    clear: none;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid #1eb760;
+    border-radius: 5px;
+    background-size: 500px 500px;
+    z-index: 2;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.home-check:visited{
+
+    background-color: green;
+}
+
+.home-input{
+    font-size: 2rem;
+    color: rgb(50, 19, 19);
+    background-color:transparent;
+    border-style: none;
+    highlight: none;
+    width: 100%;
+    height: 6rem;
+    border: none;
+    margin-top: 1rem;
+    word-spacing: .4rem;
+    padding-left: .5rem;
+    border-style: none;
+     font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.home-date{
+
+    margin-left:1rem;
+    background-color:transparent;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .9rem;
+}
+
+.home-submit{
+    margin-top: 1rem;
+    width: 10%;
+    height: 3rem;
+    background: rgb(242, 234, 211);
+    color: rgb(50, 19, 19);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    transition: width 0.6s ease-in-out;
+}
+
+.task-span{
+    font-size: 1rem;
+    color: rgb(50, 19, 19);
+    background-color:transparent;
+    word-spacing: .4rem;
+    padding-left: .5rem;
+    font-weight: bold;
+}
+
+
+/* design register page */
+
+.register-form{
+
+    margin-top:1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem;
+}
+
+
+.register-item{
+    margin: 1rem;
+     width: 60%;
+    height: 2rem;
+
+}
+.register-email{
+     margin: 1rem;
+     width: 60%;
+    height: 2rem;
+    margin-left: 8rem;
+}
+
+.register-username{
+     margin: 1rem;
+     width: 60%;
+    height: 2rem;
+    margin-left: 5rem;
+}
+
+.register-password{
+     margin: 1rem;
+     width: 60%;
+    height: 2rem;
+    margin-left: 6rem;
+}
+
+.register-submit{
+    margin-top: 1rem;
+    width: 10%;
+    height: 3rem;
+    background: rgb(242, 234, 211);
+    color: rgb(50, 19, 19);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    transition: width 0.6s ease-in-out;
+}
+
+
+.register-submit:hover{
+    width: 20%;
+    color: rgba(50, 19, 19, .6);
+}
+
+
+
+
+/* ## design login page  */
+
+.login-form{
+     margin-top:2rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem;
+    font-weight: 700;
+     color: rgb(50, 19, 19);
+
+}
+
+.login-email{
+     margin: 1rem;
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 1.2rem;
+     width: 50%;
+    height: 2rem;
+    margin-left: 5rem;
+}
+
+.login-pass{
+      margin: 1rem;
+      width: 50%;
+      font-family: 'Fira Sans', sans-serif;
+     font-size: 1.2rem;
+     height: 2rem;
+     margin-left: 3rem;
+}
+
+.login-form label{
+    margin-left: 1rem;
+    color:rgb(244, 153, 26);
+
+}
+
+
+.login-submit{
+    margin-top: 1rem;
+    margin-left: .5rem;
+    width: 10%;
+    height: 3rem;
+    background: rgb(242, 234, 211);
+    color: rgb(244, 153, 26);;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    transition: width 0.6s ease-in-out;
+}
+
+.login-submit:hover{
+    width: 20%;
+    color: rgba(50, 19, 19, .6);
+}
+
+
+
+/*  design task page */
+
+.my-task{
+    font-size: 2rem;
+    color: rgb(50, 19, 19);
+    border-style: none;
+    highlight: none;
+    width: 80%;
+    height: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    word-spacing: .4rem;
+}
+
+.task-desc{
+    font-size: 2rem;
+    color: rgb(50, 19, 19);
+    word-spacing: .4rem;
+    width: 40%;
+    height: 100px;
+    transition: width .4s ease-in-out, height .4s ease-in-out;
+
+    margin-bottom: 1rem;
+}
+
+.task-desc:focus{
+    width: 80%;
+    height: 200px;
+}
+
+.task-date{
+    margin-bottom: 2rem;
+    background: rgb(242, 234, 211);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.task-submit{
+    margin-top: 1rem;
+    margin-left: .5rem;
+    width: 20%;
+    height: 3rem;
+    background: rgb(242, 234, 211);
+    color: rgb(244, 153, 26);;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    transition: width 0.6s ease-in-out;
+}
+
+.task-submit:hover{
+    width: 20%;
+    color: rgba(50, 19, 19, .6);
+}
+
+
+
+/* -----------
+
+ design personal_tasks page     */
+
+
+.personal-title{
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    padding: .7rem 0;
+    word-spacing: .3rem;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+ .personal-image{
+    margin: 2rem;
+    text-align: center;
+ }
+
+.personal-image a{
+     text-decoration: none;
+    color:rgb(50, 19, 19);
+}
+.personal-image a:hover{
+    color: rgba(50, 19, 19, .6);
+}
+
+
+ #table-person{
+    margin: 1rem;
+}
+
+.personal-table{
+     border-collapse: collapse;
+     width:100%;
+     border-color:rgb(50, 19, 19);
+     color: rgb(50, 19, 19);
+}
+
+
+.personal-table th{
+    padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(50, 19, 19) ;
+  color: white;
+  font-size: 1.3rem;
+
+}
+
+.personal-table th, .personal-table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+.personal-table tr:nth-child(even){background-color: rgb(242, 234, 211);}
+.personal-table tr:hover {
+    background-color:rgb(244, 153, 26);
+    color: white;}
+
+
+
+/* ----------------------------------*/
+
+/* design account page */
+
+
+.account-form{
+
+    margin-top:1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem;
+}
+
+
+.account-user{
+    margin: 1rem;
+     width: 60%;
+    height: 2rem;
+
+}
+.account-email{
+     margin: 1rem;
+     width: 60%;
+    height: 2rem;
+    margin-left: 4rem;
+}
+
+.register-username{
+     margin: 1rem;
+     width: 60%;
+    height: 2rem;
+    margin-left: 5rem;
+}
+
+
+.account-photo{
+    margin: 2rem;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/*----------------------------------------
+
+/*  design flash messages */
+
+.flash-messages{
+   font-family: 'Fira Sans', sans-serif;
+   font-size: .8rem;
+    background: rgba(50, 19, 19, .8);
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: .5rem;
+    border: 2px solid black;
+
+}
+
+.flash-messages a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: .9rem;
+}
+
+flash-messages a:visited{
+    display: none;
+}

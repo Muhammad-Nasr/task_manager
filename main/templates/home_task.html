@@ -1,0 +1,43 @@
+{% include 'header.html' %}
+
+
+<div class="home-task" xmlns="http://www.w3.org/1999/html">
+    <h4>
+        ✔ Great, we've created a list for you. You should save your list, so you don't forget it.
+    </h4>
+</div>
+
+
+<div class="homeform">
+    <form method="POST">
+
+        {{ form.hidden_tag() }}
+
+        {{ form.task(class='home-input') }} <br>
+
+
+    </form>
+</div>
+
+
+<div class="homeform2">
+    <ul class="task-order">
+        {% for task in task %}
+        <li>
+            <form method="POST">
+
+                {{ form.hidden_tag() }}
+                {{ form.check_box(class='home-check') }}
+               <span class="task-span">  {{ task }} </span>
+                {{ form.task_date(class='home-date') }}
+
+            </form>
+
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+
+
+</body>
+</html>

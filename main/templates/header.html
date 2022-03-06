@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Task Manager</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+
+<div class="head-bar">
+
+
+    <div class="right-bar">
+
+
+        {% if current_user.is_authenticated %}
+         <div class="bar-item"><a href="{{ url_for ('tasks.task_page') }}"><button type="button"> Add Task </button>  </a></div>
+         <div class="bar-item"><a href="{{ url_for('home.home_page') }}"> Home </a></div>
+        <div class="bar-item"><a href="{{ url_for('tasks.personal_tasks') }}"> {{ current_user.user_name }} Page</a>
+        </div>
+        <div class="bar-item"><a href="{{ url_for('users.logout') }}"> LogOut </a></div>
+
+        {% else %}
+        <div class="bar-item"><a href="{{ url_for('home.home_page') }}"> Home </a></div>
+        <div class="bar-item"><a href="{{ url_for('users.login_page') }}"> Login </a></div>
+        <div class="bar-item"><a href="{{ url_for('users.register_page') }}"> Register </a></div>
+        {% endif %}
+    </div>
+
+
+    <div class="left-bar">
+        <h3> Task Manager Group </h3>
+    </div>
+
+
+    {% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+
+</div>
+<div class="flash-messages">
+
+    {% for category, message in messages %}
+
+    <a href="">
+        <i class="material-icons">error</i>
+        <p> Info: {{ message }}<span style="color: green">   close</span> </p></a>
+
+    {% endfor %}
+</div>
+{% endif %}
+{% endwith %}
+
+

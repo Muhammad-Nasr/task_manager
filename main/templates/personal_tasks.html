@@ -1,0 +1,48 @@
+{% include 'header.html' %}
+
+<div class="personal-title">
+
+
+    <div class="personal-image">
+        <img class="image-title" src="{{ image_file }}">
+        <a title="go to account page" href="{{ url_for ('users.account_page') }}">
+            <h3> {{ current_user.user_name.upper() }} Page </h3>
+        </a>
+
+    </div>
+
+</div>
+
+<hr>
+
+<div id="table-person">
+    <table class="personal-table">
+        <thead class="table-head">
+        <tr>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Check</th>
+            <th>Comment</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for task in person_tasks %}
+        <tr>
+            <td>hey</td>
+            <td> {{ task.description  }}</td>
+            <td>{{ task.date }}</td>
+
+            <td>
+                <form method="post" action="{{ url_for('tasks. personal_tasks') }}">
+                {{ form.hidden_tag() }}
+
+                    {{ form.check_box() }}
+                </form>
+            </td>
+            <td>good</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
